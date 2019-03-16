@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
+
+	<filter>
+		<filter-name>EncodingFilter</filter-name>
+		<filter-class>com.itheima.product.web.filter.EncodingFilter</filter-class>
+	</filter>
+
+	<filter-mapping>
+		<filter-name>EncodingFilter</filter-name>
+		<url-pattern>/*</url-pattern>
+	</filter-mapping>
+
+	<servlet>
+		<servlet-name>RegisterServlet</servlet-name>
+		<servlet-class>com.itheima.product.web.servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>RegisterServlet</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>CheckImgServlet</servlet-name>
+		<servlet-class>com.itheima.product.web.servlet.CheckImgServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>ActiveServlet</servlet-name>
+		<servlet-class>com.itheima.product.web.servlet.ActiveServlet</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>LoginServlet</servlet-name>
+		<servlet-class>com.itheima.product.web.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+
+
+	<servlet-mapping>
+		<servlet-name>CheckImgServlet</servlet-name>
+		<url-pattern>/imageCode</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>ActiveServlet</servlet-name>
+		<url-pattern>/activeServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>LoginServlet</servlet-name>
+		<url-pattern>/loginServlet</url-pattern>
+	</servlet-mapping>
+
+<!-- aaaaaaaaaaaaaaaaaaaaaaaaaa -->
+	<servlet>
+		<servlet-name>FindBookByIdServlet</servlet-name>
+		<servlet-class>com.itheima.product.web.servlet.FindBookByIdServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindBookByIdServlet</servlet-name>
+		<url-pattern>/servlet/findBookByIdServlet</url-pattern>
+	</servlet-mapping>
+
+
+  <servlet>
+    <servlet-name>PageServlet</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.PageServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>PageServlet</servlet-name>
+    <url-pattern>/pageServlet</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>FindBookInfoServlet</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.FindBookInfoServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>FindBookInfoServlet</servlet-name>
+    <url-pattern>/findBookInfoServlet</url-pattern>
+  </servlet-mapping>
+
+
+ <servlet>
+    <servlet-name>AddCartServlet</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.AddCartServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>AddCartServlet</servlet-name>
+    <url-pattern>/addCartServlet</url-pattern>
+  </servlet-mapping>
+
+ <servlet>
+    <servlet-name>ChangeNumServlet</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.ChangeNumServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>MyAccount</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.MyAccount</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindUserById</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.FindUserById</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>ModifyUserServlet</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.ModifyUserServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogOut</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.LogOut</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CreateOrderServlet</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.CreateOrderServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindOrderByUserId</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.FindOrderByUserId</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>FindOrderItemsByOrderId</servlet-name>
+    <servlet-class>com.itheima.product.web.servlet.FindOrderItemsByOrderId</servlet-class>
+  </servlet>
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>ChangeNumServlet</servlet-name>
+    <url-pattern>/changeNumServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>MyAccount</servlet-name>
+    <url-pattern>/myAccount</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindUserById</servlet-name>
+    <url-pattern>/findUserById</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ModifyUserServlet</servlet-name>
+    <url-pattern>/modifyUserServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogOut</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CreateOrderServlet</servlet-name>
+    <url-pattern>/createOrderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindOrderByUserId</servlet-name>
+    <url-pattern>/findOrderByUserId</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindOrderItemsByOrderId</servlet-name>
+    <url-pattern>/findOrderItemsByOrderId</url-pattern>
+  </servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
